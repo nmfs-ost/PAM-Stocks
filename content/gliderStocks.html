@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hardware – NOAA quarto simple</title>
+<title>Incorporating glider data in a species distribution modeling framework – NOAA quarto simple</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/FieldMethods.html" rel="next">
-<link href="../content/Inventory.html" rel="prev">
+<link href="../content/stationaryStocks.html" rel="next">
+<link href="../index.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/LabManagement.html">Lab Management</a></li><li class="breadcrumb-item"><a href="../content/Hardware.html">Hardware</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/gliderStocks.html">PAM-Gliders</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://nmfs-ost.github.io/PAM_National_NMFS_Network" title="NMFS National Passive Acoustic Monitoring Network" class="quarto-navigation-tool px-1" aria-label="NMFS National Passive Acoustic Monitoring Network"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/nmfs-ost/PAM_template_lab_manual" title="NMFS PAM SI Lab Manual Template" class="quarto-navigation-tool px-1" aria-label="NMFS PAM SI Lab Manual Template"><i class="bi bi-github"></i></a>
+    <a href="https://nmfs-ost.github.io/PAM-Stocks" title="NMFS National PAM-SI Stock Assessments" class="quarto-navigation-tool px-1" aria-label="NMFS National PAM-SI Stock Assessments"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/nmfs-ost/PAM-Stocks" title="NMFS PAM-SI Stock Assessments" class="quarto-navigation-tool px-1" aria-label="NMFS PAM-SI Stock Assessments"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
@@ -119,149 +119,38 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../content/LabManagement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Management</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Safety.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Safety</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Inventory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Inventory</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Hardware.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Hardware</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/FieldMethods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Field Methods</span></a>
+  <a href="../content/gliderStocks.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">PAM-Gliders</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/DataManagement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Management</span></a>
+  <a href="../content/stationaryStocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stationary PAM</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../content/SoftwareAnalysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software &amp; Analysis Methods</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/AnalysisMethods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analysis Methods</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Reporting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reporting</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Optional Pages</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/SharedValues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shared Values</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Onboarding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Onboarding</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Offboarding.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Offboarding</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/FieldMethods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Field Methods</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/OpenScience.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open Science</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/PublicationsPresentations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publications and Presentations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/Resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Resources</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#action-items" id="toc-action-items" class="nav-link active" data-scroll-target="#action-items"><strong>Action Items</strong></a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-ost/PAM-Stocks/edit/main/content/gliderStocks.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/blob/main/content/gliderStocks.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/LabManagement.html">Lab Management</a></li><li class="breadcrumb-item"><a href="../content/Hardware.html">Hardware</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hardware</h1>
+<h1 class="title">Incorporating glider data in a species distribution modeling framework</h1>
 </div>
 
 
@@ -278,18 +167,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A hardware section is required and should include the following information;</p>
-<ul>
-<li>Information on your recorders</li>
-<li>Array configurations and diagrams</li>
-<li>Platform information (towed, moored, drifting, etc.)</li>
-<li>Other sensors included (GPS devices, depth senors, etc.)</li>
-</ul>
-<p>This will be variable for each center and may change from project to project. You should list all hardware, present and past.</p>
-<p>You can also link to a separate hardware repository if needed (<a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Hardware_ADRIFT.html">SAEL example</a>).</p>
-<p>This can be a section with subpages or a qmd</p>
+<p>This project would develop the analytical framework necessary to integrate PAM data from slow-moving passive acoustic recorders, including underwater gliders and drifting acoustic recorders into quantitative assessments of population distribution and density. The PAM and UxS SIs are heavily investing in the testing and development of PAM-equipped gliders and this effort would ensure that those developments are more quickly leveraged to improve cetacean assessments. This project would focus on developing a statistical framework that integrates PAM data from underwater gliders and drifters with existing visual-based species distribution models (SDM) to achieve more accurate ensemble models with seasonal context.</p>
+<section id="action-items" class="level3">
+<h3 class="anchored" data-anchor-id="action-items"><strong>Action Items</strong></h3>
+<ol type="1">
+<li><p><strong>Evaluate resources required:</strong> Evaluate required funding depending on other proposals and staffing.</p></li>
+<li><p><strong>Confer with PAM SI Working Group:</strong> Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available.</p></li>
+<li><p><strong>Evaluate state of the science:</strong> Connect with Center for Research into Ecological and Environmental Modelling, Duke, and other colleagues to assess the state of the science.</p></li>
+<li><p><strong>Identify datasets and species:</strong> Collect and collate PIFSC, SEFSC, and SWFSC PAM glider data and identify priority species for modeling based on data availability and management needs.</p></li>
+<li><p><strong>Assess analytical next steps:</strong> Establish a working group to assess suitable modeling frameworks that fit PAM glider data. Additionally, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in support of this project.</p></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -526,7 +416,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/nmfs-ost\.github\.io\/PAM_template_lab_manual\/");
+      var filterRegex = new RegExp("https:\/\/nmfs-ost\.github\.io\/PAM-Stocks\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -855,13 +745,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/Inventory.html" class="pagination-link" aria-label="Inventory">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Inventory</span>
+      <a href="../index.html" class="pagination-link" aria-label="Home">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/FieldMethods.html" class="pagination-link" aria-label="Field Methods">
-        <span class="nav-page-text">Field Methods</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/stationaryStocks.html" class="pagination-link" aria-label="Stationary PAM">
+        <span class="nav-page-text">Stationary PAM</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -873,7 +763,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-ost/PAM_template_lab_manual/edit/main/content/Hardware.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/PAM_template_lab_manual/blob/main/content/Hardware.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-ost/PAM_template_lab_manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-ost/PAM-Stocks/edit/main/content/gliderStocks.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/blob/main/content/gliderStocks.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
