@@ -1,99 +1,45 @@
 ---
-title: "Home"
-subtitle: "Template for development of regional lab manuals as part of the Passive Acoustic Monitoring Strategic Initiative"
+title: "Passive Acoustic Stock Assessment"
+
 page-layout: full
 ---
 
-## PAM SI Lab Manual Template
+## Incorporating Glider Data in a Species Distribution Modeling Framework
 
-A key priority of the PAM SI is to build an open science culture across the agency by leveraging GitHub as a collaboration, coordination, and project management tool. To achieve this we will develop national and regional lab manuals that follow a parallel structure and link to each other. These manuals will serve as the primary storage location for all lab related information, including methods and data management, and will be a single access resource to support coordination across science center PAM programs.
+This project would develop the analytical framework necessary to integrate PAM data from slow-moving passive acoustic recorders, including underwater gliders and drifting acoustic recorders into quantitative assessments of population distribution and density. The PAM and UxS SIs are heavily investing in the testing and development of PAM-equipped gliders and this effort would ensure that those developments are more quickly leveraged to improve cetacean assessments. This project would focus on developing a statistical framework that integrates PAM data from underwater gliders and drifters with existing visual-based species distribution models (SDM) to achieve more accurate ensemble models with seasonal context.
 
-## Required Pages
+### Goal
 
-In order to keep consistency between science centers, the following sections/pages will be required in all lab manuals. These will be directly linked to the National PAM Repository. The links will direct you to the associated template page with more directions on what to include.
+Advancing the accuracy of stock assessments to capture seasonal and long-term changes in distribution using PAM glider datasets.
 
--   Home Page (this page): Edit this page to include an introduction to your lab, projects you are working on, etc.
--   [Lab Management](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
--   [Field Methods](https://nmfs-ost.github.io/PAM_template_lab_manual/content/FieldMethods.html)
--   [Data Management](https://nmfs-ost.github.io/PAM_template_lab_manual/content/DataManagement.html)
--   [Hardware](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Hardware.html)
--   [Software](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Software.html)
--   [Analysis](https://nmfs-ost.github.io/PAM_template_lab_manual/content/AnalysisMethods.html)
--   [Reporting](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Reporting.html)
+### Action Items
 
+1.  **Evaluate resources required:** Evaluate required funding depending on other proposals and staffing.
 
-## Optional Pages
+2.  **Confer with PAM SI Working Group:** Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available.
 
-Here are some more ideas for pages to include in your lab manual. These are optional and will not be linked to the main National PAM Repo, but they may be helpful for your team
+3.  **Evaluate state of the science:** Connect with Center for Research into Ecological and Environmental Modelling, Duke, and other colleagues to assess the state of the science.
 
--   [Shared values/lab culture](https://nmfs-ost.github.io/PAM_template_lab_manual/content/SharedValues.html)
--   [Onboarding](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Onboarding.html)
--   [Offboarding](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Offboarding.html)
--   [Field Methods](https://nmfs-ost.github.io/PAM_template_lab_manual/content/FieldMethods.html)
--   [Open Science](https://nmfs-ost.github.io/PAM_template_lab_manual/content/OpenScience.html)
--   [Publications/Presentations](https://nmfs-ost.github.io/PAM_template_lab_manual/content/PublicationsPresentations.html)
--   [Resources](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Resources.html)
+4.  **Identify datasets and species:** Collect and collate PIFSC, SEFSC, and SWFSC PAM glider data and identify priority species for modeling based on data availability and management needs.
 
-## How To Use This Template
+5.  **Assess analytical next steps:** Establish a working group to assess suitable modeling frameworks that fit PAM glider data. Additionally, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in support of this project.
 
-This template will create a Quarto website that each lab can copy and edit with their own lab information. Follow the steps below to copy this template to your lab's GitHub
+## Incorporating stationary data into a species distribution modeling framework
 
-1.  Open [this repository on GitHub](https://github.com/nmfs-ost/PAM_template_lab_manual)
+This project would support the PAM SI objective of advancing data integration by leveraging stationary PAM data and visual data to improve the accuracy of stock assessments by capturing seasonal and long-term changes. This project would focus on developing a statistical framework for integrating a density model created with stationary PAM data with existing visual-based SDMs to achieve more accurate models with seasonal context. This project may leverage LISTEN GoMex funding to develop models for sperm whales and beaked whales.
 
-2.  Click on the 'Use this template' button in the top right, select 'Create new repository'
+### Goal
 
-    ![](content/images/repoTemplate.png)
+Integrating long-term PAM data into species density models to provide seasonal and long-term changes in distribution and density.
 
-3.  Edit repository settings
+### Action Items:
 
-    -   Select the 'Include all branches' option
+1.  **Establish collaboration:** Meet with Lance Garrison to identify his interest and willingness to convene a working group to support his ongoing effort and work towards broader applicability of the outcomes.
 
-    -   Select your lab organization or yourself as the owner and set the repository name to 'Lab name Lab Manual'
+2.  **Identify resources required:** Evaluate whether LISTEN GoMex requires more resources to make these methods broadly applicable.
 
-    -   Make description "Lab manual for 'insert lab name and FMC'"
+3.  **Confer with PAM SI Working Group:** Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available. Deadline: May 2024. Note: As of May 2024, this project was not selected for funding by the PAM SI Working Group. However, given the synergies between integrating stationary PAM data and mobile PAM data, the SI will leverage any PAM data integration workshops held to assess the state of the science for integrating both data types into species distribution modeling framework. This will advance our analytical readiness to pursue this project at a later time.
 
-    -   Make the repo public
+4.  **Establish project team:** Establish working group, potentially including colleagues from Duke University, Fisheries and Oceans Canada, etc., to meet periodically with the LISTEN GoMex team to ensure broad regional relevance.
 
-        ![](content/images/RepoSettings.png)
-
-4.  Click create repository
-
-5.  Turn on GitHub pages under Settings-\>Pages. You will set pages to be made from the gh-pages branch and root directory
-
-    ![](content/images/branches.png)
-
-6.  Update 'Actions' settings
-
-    -   Under Settings -\> Actions -\> General -\> Actions permissions select 'Allow all actions and reusable workflows'. Select save
-
-        ![](content/images/actions.png){width="323"}
-
-    -   Under Settings -\> Actions -\> General -\> Workflow permissions select 'Read and write permissions'
-
-        ![](content/images/workflowPermissions.png)
-
-        ::: callout-important
-        ## Note: Both of these settings may already be selected but you have to click save for both
-        :::
-
-7.  Return to the main page of the repo to edit your website
-
-    -   Click on 'Code' in the top left
-
-    -   Click on the settings button next to the 'About' section on the right side of the repository
-
-    -   Select 'Use your GitHub Pages website'. This should autopopulate the website
-
-    -   Select 'Save Changes'
-
-        ![](content/images/website.png)
-
-8.  Your lab manual is now created! Go [here](https://sael-swfsc.github.io/OpenScience/content/labManual.html) for more information on building your lab manual.
-
-## Example Manuals
-
-Here are two lab manuals to pull inspiration from
-
--   [SWFSC Southwest Acoustic Ecology Lab Manual](https://sael-swfsc.github.io/SAEL-lab-manual/content/media.html)
--   [Faylab Manual](https://thefaylab.github.io/lab-manual/)
--   [SWFSC Glider Lab Manual](https://swfsc.github.io/glider-lab-manual/)
+5.  **Expand capacity:** If funded, advertise post-doc position to support this effort. Alterntively, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in conjunction with Project 1.
