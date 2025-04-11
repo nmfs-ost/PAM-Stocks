@@ -7,16 +7,17 @@ website:
   site-url: "https://nmfs-ost.github.io/PAM-Stocks/" 
   repo-url: "https://github.com/nmfs-ost/PAM-Stocks"
   repo-actions: [edit, source, issue]
-  favicon: images/favicon.ico
+  favicon: content/images/stock_art_big_tail_urchin.png
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
     left: "&copy; CC-1.0"
   
   sidebar:
-    background: "#D9E3E4"
-    logo: "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
-    favicon: images/favicon.ico
+    background: $dove-gray-2 #"#CBCFD1""
+    # logo: "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
+    logo: content/images/stock_art_big_tail_urchin.png
+    favicon: content/images/stock_art_big_tail_urchin.png
     pinned: true
     align: center
     tools: 
@@ -33,18 +34,15 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      # - section: content/LabManagement.qmd
-      #   contents: 
-      #     - href: content/Safety.qmd
-      #       text: Safety
-      #     - href: content/Inventory.qmd
-      #       text: Inventory
-      #     - href: content/Hardware.qmd
-      #       text: Hardware
       - href: content/gliderStocks.qmd
-        text: "PAM-Gliders"
+        text: Mobile recorders
+        # contents:
+        #   - href: content/spacious/propagation.qmd
+        #   - href: content/spacious/occupancy.qmd
+        #   - href: content/spacious/species.qmd
+        #   - href: content/spacious/nextSteps.qmd
       - href: content/stationaryStocks.qmd
-        text: Stationary PAM
+        text: Stationary recorders
 
         
 format:
