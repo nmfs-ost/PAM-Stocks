@@ -7,7 +7,7 @@ website:
   site-url: "https://nmfs-ost.github.io/PAM-Stocks/" 
   repo-url: "https://github.com/nmfs-ost/PAM-Stocks"
   repo-actions: [edit, source, issue]
-  favicon: content/images/stock_art_big_tail_1.png
+  favicon: content/images/stock_art_big_tail_urchin.png
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
@@ -16,8 +16,8 @@ website:
   sidebar:
     background: $dove-gray-2 #"#CBCFD1""
     # logo: "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
-    logo: content/images/stock_art_big_tail_1.png
-    favicon: content/images/stock_art_big_tail_1.png
+    logo: content/images/stock_art_big_tail_urchin.png
+    favicon: content/images/stock_art_big_tail_urchin.png
     pinned: true
     align: center
     tools: 
