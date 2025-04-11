@@ -7,7 +7,7 @@
    width="188.16685"
    height="177.00952"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   inkscape:export-filename="stock_art_big_tail_1.png"
+   inkscape:export-filename="stock_art_big_tail_vividurchin.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -45,10 +45,13 @@
   </sodipodi:namedview>
   <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
   <path
-     style="fill:#5761c0;fill-opacity:1;stroke:#5761c0;stroke-width:5.87982;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#737be6;fill-opacity:1;stroke:#737be6;stroke-width:5.87982;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      d="M 115.35801,91.429447 C 103.47446,78.317416 98.774247,67.495281 99.776027,55.548508 100.42234,47.840934 110.47189,41.162934 115.92955,32.170232 120.81958,24.112825 125.95388,14.135399 126.06776,5.5241384 117.39811,12.137107 100.42784,17.101499 95.25426,21.148718 89.328119,25.784657 87.322026,31.649243 84.478802,34.774259 80.30759,33.495268 77.129039,30.49387 69.90513,29.22053 c -7.046846,-1.242115 -32.225888,6.989156 -39.76756,2.948103 2.20124,7.889144 10.969313,12.884298 23.290107,16.798248 10.651639,3.3837 25.106332,4.628214 31.764249,11.885234 9.049331,9.863643 7.761742,28.325521 9.547031,38.644864 l 6.451943,3.313361 z"
      id="path1"
-     sodipodi:nodetypes="csscscscssccc" />
+     sodipodi:nodetypes="csscscscssccc"
+     inkscape:export-filename="stock_art_big_tail_urchin.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
   <rect
      style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.06558;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      id="rect1"
@@ -85,12 +88,12 @@
      x="120.88441"
      y="105.50367" />
   <path
-     style="fill:none;stroke:#5761c0;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#737be6;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      d="M 14.979119,111.48928 63.941268,77.964238 97.509653,103.62068 172.9608,42.969284"
      id="path3"
      sodipodi:nodetypes="cccc" />
   <path
-     style="fill:none;fill-opacity:1;stroke:#5761c0;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;stroke-miterlimit:4"
+     style="fill:none;fill-opacity:1;stroke:#737be6;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;stroke-miterlimit:4"
      d="m 153.4965,36.503497 h 25 v 25"
      id="path5"
      sodipodi:nodetypes="ccc" />
