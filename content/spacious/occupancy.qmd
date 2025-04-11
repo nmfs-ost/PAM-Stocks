@@ -1,0 +1,5 @@
+---
+title: "Occupancy modeling"
+---
+
+## Occupancy details will go here...
