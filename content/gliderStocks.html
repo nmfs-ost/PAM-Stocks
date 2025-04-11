@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Incorporating glider data in a species distribution modeling framework – NOAA quarto simple</title>
+<title>Incorporating slow-moving recorder data in a species distribution modeling framework – NOAA quarto simple</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,17 +31,17 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <link href="../content/stationaryStocks.html" rel="next">
 <link href="../index.html" rel="prev">
-<link href="../images/favicon.ico" rel="icon">
+<link href="../content/images/stock_art_big_tail_urchin.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2060c1fdc48bdcd166b162226a62f917.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-fa64204eeeb0bdfaf7a89d3c1cc8ce90.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-0045eb1c33f61f19c2496553aa0e9380.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/gliderStocks.html">PAM-Gliders</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/gliderStocks.html">Mobile recorders</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../content/images/stock_art_big_tail_urchin.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://nmfs-ost.github.io/PAM-Stocks" title="NMFS National PAM-SI Stock Assessments" class="quarto-navigation-tool px-1" aria-label="NMFS National PAM-SI Stock Assessments"><i class="bi bi-globe"></i></a>
@@ -122,13 +122,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/gliderStocks.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">PAM-Gliders</span></a>
+ <span class="menu-text">Mobile recorders</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/stationaryStocks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Stationary PAM</span></a>
+ <span class="menu-text">Stationary recorders</span></a>
   </div>
 </li>
     </ul>
@@ -141,7 +141,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#action-items" id="toc-action-items" class="nav-link active" data-scroll-target="#action-items"><strong>Action Items</strong></a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link active" data-scroll-target="#project-goals"><strong>Project goals</strong></a></li>
+  <li><a href="#team-links" id="toc-team-links" class="nav-link" data-scroll-target="#team-links">Team links</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-ost/PAM-Stocks/edit/main/content/gliderStocks.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/blob/main/content/gliderStocks.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-ost/PAM-Stocks/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -150,7 +151,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Incorporating glider data in a species distribution modeling framework</h1>
+<h1 class="title">Incorporating slow-moving recorder data in a species distribution modeling framework</h1>
+<p class="subtitle lead">Team: Janelle Badger, Yvonne Barkley, Devin Johnson, Kaitlin Palmer, Selene Fregosi (PIFSC)</p>
 </div>
 
 
@@ -167,18 +169,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project would develop the analytical framework necessary to integrate PAM data from slow-moving passive acoustic recorders, including underwater gliders and drifting acoustic recorders into quantitative assessments of population distribution and density. The PAM and UxS SIs are heavily investing in the testing and development of PAM-equipped gliders and this effort would ensure that those developments are more quickly leveraged to improve cetacean assessments. This project would focus on developing a statistical framework that integrates PAM data from underwater gliders and drifters with existing visual-based species distribution models (SDM) to achieve more accurate ensemble models with seasonal context.</p>
-<section id="action-items" class="level3">
-<h3 class="anchored" data-anchor-id="action-items"><strong>Action Items</strong></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SPACIOUS_icon.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="240"></p>
+</figure>
+</div>
+<p>The <strong>SPACIOUS project</strong> (Spatial Population Assessment of Cetaceans Integrating acoustic Observations from Uncrewed Systems) aims to develop the analytical framework necessary to integrate PAM data from slow-moving passive acoustic recorders, including underwater gliders and drifting acoustic recorders, into quantitative assessments of population distribution and density. The PAM and UxS SIs are heavily investing in the testing and development of PAM-equipped gliders and this effort will ensure that those developments are more quickly leveraged to improve cetacean assessments. This project will focus on developing a statistical framework that integrates PAM data from underwater gliders and drifters with existing visual-based species distribution models (SDM) to achieve more accurate ensemble models with seasonal context.</p>
+<section id="project-goals" class="level3">
+<h3 class="anchored" data-anchor-id="project-goals"><strong>Project goals</strong></h3>
 <ol type="1">
-<li><p><strong>Evaluate resources required:</strong> Evaluate required funding depending on other proposals and staffing.</p></li>
-<li><p><strong>Confer with PAM SI Working Group:</strong> Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available.</p></li>
-<li><p><strong>Evaluate state of the science:</strong> Connect with Center for Research into Ecological and Environmental Modelling, Duke, and other colleagues to assess the state of the science.</p></li>
-<li><p><strong>Identify datasets and species:</strong> Collect and collate PIFSC, SEFSC, and SWFSC PAM glider data and identify priority species for modeling based on data availability and management needs.</p></li>
-<li><p><strong>Assess analytical next steps:</strong> Establish a working group to assess suitable modeling frameworks that fit PAM glider data. Additionally, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in support of this project.</p></li>
+<li><p>Identify aspects of spatial models and currenty density estimation methods that need modification/supplementation to incorporate slow-moving data</p></li>
+<li><p>Conduct simulations and/or experiments to address missing model components</p></li>
+<li><p>Develop analytical framework with an initial target species</p></li>
+<li><p>Engage with the PAM glider and modelling communities to assess the state of the science and validate approaches</p></li>
 </ol>
+<!-- ### **Action items** -->
+<!-- 1.  **Evaluate resources required:** Evaluate required funding depending on other proposals and staffing. -->
+<!-- 2.  **Confer with PAM SI Working Group:** Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available. -->
+<!-- 3.  **Evaluate state of the science:** Connect with Center for Research into Ecological and Environmental Modelling, Duke, and other colleagues to assess the state of the science. -->
+<!-- 4.  **Identify datasets and species:** Collect and collate PIFSC, SEFSC, and SWFSC PAM glider data and identify priority species for modeling based on data availability and management needs. -->
+<!-- 5.  **Assess analytical next steps:** Establish a working group to assess suitable modeling frameworks that fit PAM glider data. Additionally, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in support of this project. -->
+</section>
+<section id="team-links" class="level3">
+<h3 class="anchored" data-anchor-id="team-links">Team links</h3>
+<p><em>*may require NOAA Google Drive or GitHub enterprise access</em></p>
+<p><a href="https://github.com/PIFSC-Protected-Species-Division/PAM-SPACIOUS">PAM-Spacious repository</a></p>
+<p><a href="https://drive.google.com/drive/u/0/folders/13tSbUPhnqMJ6KupfIaAQ7_omoTFf6mBU">Acoustic Glider Spatial Modeling Project Google Drive Folder</a></p>
+<section id="project-update-slides" class="level5">
+<h5 class="anchored" data-anchor-id="project-update-slides">Project update slides</h5>
+<p><a href="https://docs.google.com/presentation/d/1aL-70ErgSfrShO0hvrPcnYKEC1tX26Xq_vS1F9YYBmM/edit#slide=id.p">SPACIOUS March 2025 Status Update</a></p>
+<p><a href="https://docs.google.com/presentation/d/1UXxUSBQamcx3KK6Rnc_qemH0M5XTRLnNdvTPX6_i9xM/edit#slide=id.p">SPACIOUS August 2024 PAM-SI Glider Briefing</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -750,8 +773,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/stationaryStocks.html" class="pagination-link" aria-label="Stationary PAM">
-        <span class="nav-page-text">Stationary PAM</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/stationaryStocks.html" class="pagination-link" aria-label="Stationary recorders">
+        <span class="nav-page-text">Stationary recorders</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

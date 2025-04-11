@@ -2,14 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nmfs-ost.github.io/PAM-Stocks/content/gliderStocks.html</loc>
-    <lastmod>2025-03-24T21:26:33.136Z</lastmod>
+    <lastmod>2025-04-11T18:27:57.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-ost.github.io/PAM-Stocks/content/spacious/propagation.html</loc>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-ost.github.io/PAM-Stocks/content/spacious/nextSteps.html</loc>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-ost.github.io/PAM-Stocks/index.html</loc>
-    <lastmod>2025-03-24T21:26:33.138Z</lastmod>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-ost.github.io/PAM-Stocks/content/stationaryStocks.html</loc>
-    <lastmod>2025-03-24T21:26:33.138Z</lastmod>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-ost.github.io/PAM-Stocks/content/spacious/species.html</loc>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-ost.github.io/PAM-Stocks/content/spacious/occupancy.html</loc>
+    <lastmod>2025-04-11T18:27:57.220Z</lastmod>
   </url>
 </urlset>
