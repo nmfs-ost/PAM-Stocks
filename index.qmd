@@ -36,7 +36,7 @@ The **SPACIOUS project** (Spatial Population Assessment of Cetaceans Integrating
 
 Advancing the accuracy of stock assessments to capture seasonal and long-term changes in distribution using PAM glider datasets.
 
-**For more info see the [Mobile recorders page](contents/gliderStocks/qmd)**
+**For more info see the [Mobile recorders page](content/gliderStocks.qmd)**
 
 ---
 
