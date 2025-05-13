@@ -1,0 +1,36 @@
+---
+title: "Improving stock assessments of cryptic deep diving species in the western North Atlantic using drifting acoustic recorders"
+subtitle: "Team: Annamaria DeAngelis, Jennifer McCullough, Janelle Badger"
+---
+
+This project uses drifting acoustic buoy recorders (aka. DASBRs or drifters) to quantify abundance and distribution of offshore deep diving cetacean populations, primarily goose-beaked, Blainville’s, True’s, and Sowerby’s beaked whales.  Previous NMFS stock assessment reports either group beaked whale species together as one general “stock”, or have large coefficients of variation (CV) around the abundance estimates due to the biases of observing them visually (Barlow et al. 2005). PAM provides a viable solution to this problem as each beaked whale species emits species-specific echolocation signals while foraging (Johnson et al. 2004, Baumann-Pickering et al. 2013), and their foraging behavior is predictable. This makes them good candidates for density estimation. 
+
+
+:::::::::::::: {.columns}
+::: {.column width="25%"}
+
+![](/content/images/NAStocks_images/DASBR.png)
+
+::: 
+::: {.column width="75%"}
+
+\
+
+One of the ways in which density estimation of beaked whales can be done is through towed hydrophone array surveys, but those are limited in the frequency by which they occur. Bottom mounted archival instruments are available, but are costly to deploy at the depths at which beaked whales forage (1000m+), and are out for long periods of time, which leads to a delay in abundance estimates. A more cost effective solution that can complement NMFS standard cetacean line transect abundance surveys while providing quicker estimates, is to utilize drifting acoustic recorders. These instruments are deployed at a location and allowed to drift for a period of time before retrieval. These buoys have already been used to estimate beaked whale densities off the West Coast of the US (Barlow et al. 2021), and are also actively used in the Pacific Islands (McCullough et al. 2021). This project extends PAM drifter efforts to the North Atlantic, and will complement the shipboard efforts conducted by the NEFSC by extending survey periods into poor weather months where there is little temporal effort (e.g. fall, spring).
+
+:::
+::::::::::::::
+
+
+### Project Goals
+
+* Establish a drifting passive acoustic recording network along the east coast of the US  
+* Provide density estimates of goose-beaked, Blainville’s, True’s, and Sowerby’s beaked whales for NMFS stock assessment reports  
+* Secondary project goals  
+  * Estimate sperm whale density per demographic class  
+  * Record distribution of Kogia species  
+  * Calculate sound metrics to characterize pelagic ocean soundscapes  
+  * Browse data for presence of ESA listed large cetaceans to be hosted on the Passive Acoustic Cetacean Map
+  
+![](/content/images/NAStocks_images/Studyrange.png)  
+*Map of the survey area with 50 km gridcells (which are used when planning Pacific drifting recorder deployments). Turquoise outlined grids show the grid cells that are targeted for the first fieldwork season, with the orange line highlighting the route that would be taken to deploy the instruments.*

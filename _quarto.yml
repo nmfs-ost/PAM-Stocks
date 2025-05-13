@@ -43,6 +43,8 @@ website:
         #   - href: content/spacious/nextSteps.qmd
       - href: content/stationaryStocks.qmd
         text: Stationary recorders
+      - href: content/NAStocks.qmd
+        text: North Atlantic stocks
 
         
 format:
