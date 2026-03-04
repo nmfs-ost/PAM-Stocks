@@ -37,12 +37,16 @@ The **SPACIOUS project** (Spatial Population Assessment of Cetaceans Integrating
 
 *\*may require NOAA Google Drive or GitHub enterprise access*
 
-[PAM-Spacious repository](https://github.com/PIFSC-Protected-Species-Division/PAM-SPACIOUS)
+[PAM-SPACIOUS repository](https://github.com/PIFSC-Protected-Species-Division/PAM-SPACIOUS)
 
 [Acoustic Glider Spatial Modeling Project Google Drive Folder](https://drive.google.com/drive/u/0/folders/13tSbUPhnqMJ6KupfIaAQ7_omoTFf6mBU)
 
+[PAM-SPACIOUS Retrospective Project](https://github.com/orgs/PIFSC-Protected-Species-Division/projects/40)
+
 ##### Project update slides
 
-[SPACIOUS March 2025 Status Update](https://docs.google.com/presentation/d/1aL-70ErgSfrShO0hvrPcnYKEC1tX26Xq_vS1F9YYBmM/edit#slide=id.p)
+[SPACIOUS March 2026 Status Update](https://docs.google.com/presentation/d/11yTZApe5wKZ4lk1MAr91hfschRlKmkazSWrFFag-hQ8/edit?usp=sharing)
 
-[SPACIOUS August 2024 PAM-SI Glider Briefing](https://docs.google.com/presentation/d/1UXxUSBQamcx3KK6Rnc_qemH0M5XTRLnNdvTPX6_i9xM/edit#slide=id.p)
+[SPACIOUS March 2025 Status Update](https://docs.google.com/presentation/d/1aL-70ErgSfrShO0hvrPcnYKEC1tX26Xq_vS1F9YYBmM/edit?usp=sharing)
+
+[SPACIOUS August 2024 PAM-SI Glider Briefing](https://docs.google.com/presentation/d/1UXxUSBQamcx3KK6Rnc_qemH0M5XTRLnNdvTPX6_i9xM/edit?usp=sharing)
