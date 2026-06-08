@@ -1,6 +1,6 @@
 ---
 title: Incorporating slow-moving recorder data in a species distribution modeling framework
-subtitle: "Team: Janelle Badger, Yvonne Barkley, Devin Johnson, Kaitlin Palmer, Selene Fregosi (PIFSC)"
+subtitle: "Team: Janelle Gardner, Yvonne Barkley, Devin Johnson, Kaitlin Palmer, Selene Fregosi, Megan Wood (PIFSC)"
 ---
 
 ![](images/SPACIOUS_v2.png){fig-align="center" width=240}
