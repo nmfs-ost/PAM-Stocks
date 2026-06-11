@@ -19,6 +19,48 @@ The **SPACIOUS project** (Spatial Population Assessment of Cetaceans Integrating
 
 4. Engage with the PAM glider and modelling communities to assess the state of the science and validate approaches
 
+### **Project status**
+*Last updated: June 2026*
+
+::: {.panel-tabset}
+
+#### Glider operations
+
+*(Selene)*
+
+SPACIOUS draws on two glider datasets collected as part of a Pacific-wide effort to operationalize PAM gliders for NMFS cetacean surveys. Both datasets are named for concurrent ship-based visual and acoustic surveys, enabling direct comparisons across data collection methods.
+
+**CalCurCEAS** (California Current Cetacean and Ecosystem Assessment Survey): Two gliders surveyed the shelfbreak from Newport, OR to Eureka, CA in Fall 2024, covering ~800 km each over 6 weeks (red and yellow lines, left).
+
+**WHICEAS** (Winter Hawaiian Islands Cetacean and Ecosystem Assessment Survey): Five gliders were deployed around the Main Hawaiian Islands from February–April 2026 for 6–12 weeks, covering up to 1,400 km each. Three will be used in SPACIOUS; SG679 (purple) is excluded due to a memory issue and the Slocum glider (green) due to platform differences.
+
+All gliders carried identical WISPR3 recording systems sampling at 200 kHz. Gliders dove repeatedly to 1,000 m on 5–7 hour cycles, recording at all depths below 10 m — yielding near-continuous acoustic records with only ~10-minute gaps at the surface.
+
+::: {layout-ncol=2 layout-valign="center"}
+![CalCurCEAS glider tracks (colored lines) and concurrent ship tracks (white)](images/CalCurCEAS_allGliders_withShip_white.png){height=300}
+
+![WHICEAS glider tracks (colored lines) and concurrent ship tracks (white)](images/WHICEAS_allGliders_withShip_white.png){height=300}
+:::
+
+
+
+#### Sperm whale detection
+
+*(Megan)*
+
+#### Propagation modeling
+
+*(Kait)*
+
+#### Likelihood estimation
+
+*(Devin)*
+
+#### DSM development
+
+*(Yvonne and Janelle)*
+
+:::
 
 <!-- ### **Action items** -->
 
