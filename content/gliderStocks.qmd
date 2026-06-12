@@ -48,6 +48,19 @@ All gliders carried identical WISPR3 recording systems sampling at 200 kHz. Glid
 
 *(Megan)*
 
+Following the successful completion of glider missions, raw audio files were converted to 60 to 120 second flac files for analysis. These flac files are also compressed as long-term spectral averages (LTSAs), which are used to enable analysts to visualize recordings at longer time scales. Using the MatLab-based package Triton, a trained analyst audited recordings in 15-minute LTSA viewing windows looking for odontocete signals of interest, including sperm whale clicks. When found, sperm whale click bouts were logged at the encounter-level, such that sperm whale clicks with less than 15 minutes of silence before the next click were contained within the same encounter. 
+
+**Completed detection work**: For the two gliders deployed during CalCurCEAS2024, there were a total of 131 encounters, accounting for about 157 hours of data.
+***Sperm whale presence by dive-portion***: In order to break a glider deployment into useful segments, each glider's path was broken into dive-portions (ie Dive001-decent/ascent). Sperm whale presence was graded on a binary basis based on whether any portion of a sperm whale encounter occurred during that portion. In total, there were 125 dives with at least some sperm whale click calling present.
+***Manual click count analysis for detector validation***: For each dive-portion where sperm whales were present, a dozen one-minute subsamples were selected at random. For each subsample, a trained analyst manually selected individual sperm whale clicks. This resulted in a groundtruth dataset of 1500 minutes and over 300,000 clicks, which will be used to validate automated detectors used to generate click counts across the entire dataset.
+
+**Future detection work**: Effort is currently underway to completed automated detection of clicks on CalCurCEAS2024 data and use groundtruth data to generate an adjusted click count within each dive-portion. Following the completion of glider deployments from WHICEAS2026, recording data is being processed and initial analysis for sperm whale encounters is forthcoming.
+
+::: {layout-ncol=1 layout-valign="center"}
+![CalCurCEAS sperm whale encounters (purple dots) mapped along glider tracks (gray) (white)](images/Pm_Enc_Map.png){height=300}
+:::
+
+
 #### Propagation modeling
 
 *(Kait)*
