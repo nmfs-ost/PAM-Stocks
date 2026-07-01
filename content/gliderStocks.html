@@ -394,10 +394,9 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="project-status"><strong>Project status</strong></h3>
 <p><em>Last updated: June 2026</em></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Glider operations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sperm whale detection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Propagation modeling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Likelihood estimation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">DSM development</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Glider operations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sperm whale detection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Propagation modeling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Likelihood estimation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Detection parameter estimation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">DSM development</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><em>(Selene)</em></p>
 <p>SPACIOUS draws on two glider datasets collected as part of a Pacific-wide effort to operationalize PAM gliders for NMFS cetacean surveys. Both datasets are named for concurrent ship-based visual and acoustic surveys, enabling direct comparisons across data collection methods.</p>
 <p><strong>CalCurCEAS</strong> (California Current Cetacean and Ecosystem Assessment Survey): Two gliders surveyed the shelfbreak from Newport, OR to Eureka, CA in Fall 2024, covering ~800 km each over 6 weeks (red and yellow lines, left).</p>
 <p><strong>WHICEAS</strong> (Winter Hawaiian Islands Cetacean and Ecosystem Assessment Survey): Five gliders were deployed around the Main Hawaiian Islands from February–April 2026 for 6–12 weeks, covering up to 1,400 km each. Three will be used in SPACIOUS; SG679 (purple) is excluded due to a memory issue and the Slocum glider (green) due to platform differences.</p>
@@ -424,7 +423,6 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><em>(Megan)</em></p>
 <p>Following the successful completion of glider missions, raw audio files were converted to 60 to 120 second flac files for analysis. These flac files are also compressed as long-term spectral averages (LTSAs), which are used to enable analysts to visualize recordings at longer time scales. Using the MatLab-based package Triton, a trained analyst audited recordings in 15-minute LTSA viewing windows looking for odontocete signals of interest, including sperm whale clicks. When found, sperm whale click bouts were logged at the encounter-level, such that sperm whale clicks with less than 15 minutes of silence before the next click were contained within the same encounter.</p>
 <p><strong>Completed detection work</strong>: For the two gliders deployed during CalCurCEAS2024, there were a total of 131 encounters, accounting for about 157 hours of data. <strong><em>Sperm whale presence by dive-portion</em></strong>: In order to break a glider deployment into useful segments, each glider’s path was broken into dive-portions (ie Dive001-decent/ascent). Sperm whale presence was graded on a binary basis based on whether any portion of a sperm whale encounter occurred during that portion. In total, there were 125 dives with at least some sperm whale click calling present. <strong><em>Manual click count analysis for detector validation</em></strong>: For each dive-portion where sperm whales were present, a dozen one-minute subsamples were selected at random. For each subsample, a trained analyst manually selected individual sperm whale clicks. This resulted in a groundtruth dataset of 1500 minutes and over 300,000 clicks, which will be used to validate automated detectors used to generate click counts across the entire dataset.</p>
 <p><strong>Future detection work</strong>: Effort is currently underway to completed automated detection of clicks on CalCurCEAS2024 data and use groundtruth data to generate an adjusted click count within each dive-portion. Following the completion of glider deployments from WHICEAS2026, recording data is being processed and initial analysis for sperm whale encounters is forthcoming.</p>
@@ -445,7 +443,9 @@ window.Quarto = {
 <p><em>(Kait)</em></p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p><em>(Devin)</em> #### Detection parameter estimation</p>
+
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>Detection of an acoustic signal occurs when <span class="math display">\[
 R(p, s, \theta) - N &gt;T
 \]</span> where <span class="math inline">\(N\)</span> is the noise level, <span class="math inline">\(T\)</span> is a set threshold, and <span class="math inline">\(r(p, s, \theta)\)</span> is the received signal for an animal that emitted a click at position <span class="math inline">\(p=(x,y,z)\)</span> of nominal sound level <span class="math inline">\(s\)</span> and angle <span class="math inline">\(\theta\)</span> relative to the glider. The signal level can be decomposed as <span class="math display">\[
@@ -506,7 +506,7 @@ P_{cl} &amp;= \int \int_{u&gt;T+N+L(p)}f_E(u)~f_P(p)~du~dp \\
 </div>
 </div>
 </div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
 <p><em>(Yvonne and Janelle)</em></p>
 </div>
 </div>
