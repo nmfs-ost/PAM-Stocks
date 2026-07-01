@@ -26,8 +26,6 @@ The **SPACIOUS project** (Spatial Population Assessment of Cetaceans Integrating
 
 #### Glider operations
 
-*(Selene)*
-
 SPACIOUS draws on two glider datasets collected as part of a Pacific-wide effort to operationalize PAM gliders for NMFS cetacean surveys. Both datasets are named for concurrent ship-based visual and acoustic surveys, enabling direct comparisons across data collection methods.
 
 **CalCurCEAS** (California Current Cetacean and Ecosystem Assessment Survey): Two gliders surveyed the shelfbreak from Newport, OR to Eureka, CA in Fall 2024, covering ~800 km each over 6 weeks (red and yellow lines, left).
@@ -45,8 +43,6 @@ All gliders carried identical WISPR3 recording systems sampling at 200 kHz. Glid
 
 
 #### Sperm whale detection
-
-*(Megan)*
 
 Following the successful completion of glider missions, raw audio files were converted to 60 to 120 second flac files for analysis. These flac files are also compressed as long-term spectral averages (LTSAs), which are used to enable analysts to visualize recordings at longer time scales. Using the MatLab-based package Triton, a trained analyst audited recordings in 15-minute LTSA viewing windows looking for odontocete signals of interest, including sperm whale clicks. When found, sperm whale click bouts were logged at the encounter-level, such that sperm whale clicks with less than 15 minutes of silence before the next click were contained within the same encounter. 
 
@@ -67,7 +63,6 @@ Following the successful completion of glider missions, raw audio files were con
 
 #### Likelihood estimation
 
-*(Devin)*
 #### Detection parameter estimation
 
 Detection of an acoustic signal occurs when $$
