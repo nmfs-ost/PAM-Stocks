@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -416,7 +445,66 @@ ul.task-list li input[type="checkbox"] {
 <p><em>(Kait)</em></p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p><em>(Devin)</em></p>
+<p><em>(Devin)</em> #### Detection parameter estimation</p>
+<p>Detection of an acoustic signal occurs when <span class="math display">\[
+R(p, s, \theta) - N &gt;T
+\]</span> where <span class="math inline">\(N\)</span> is the noise level, <span class="math inline">\(T\)</span> is a set threshold, and <span class="math inline">\(r(p, s, \theta)\)</span> is the received signal for an animal that emitted a click at position <span class="math inline">\(p=(x,y,z)\)</span> of nominal sound level <span class="math inline">\(s\)</span> and angle <span class="math inline">\(\theta\)</span> relative to the glider. The signal level can be decomposed as <span class="math display">\[
+R(p,s,\theta) = s - L(p)-D(\theta),
+\]</span> where <span class="math inline">\(L(p)\)</span> is the transmission loss from the animal at position <span class="math inline">\(p\)</span> and <span class="math inline">\(D(\theta)\)</span> is the sound level attenuation of the animal facing angle <span class="math inline">\(\theta\)</span> relative to the glider.</p>
+<p>The <em>effective</em> sound level is defined as <span class="math display">\[
+E(s,\theta) = s-D(\theta),
+\]</span> and is what sound level the animal produces relative to the hydrophone on the glider.</p>
+<p>Because <span class="math inline">\(p\)</span>, <span class="math inline">\(s\)</span>, and <span class="math inline">\(\theta\)</span> cannot be measured we can describe them as random variables with probability distributions, <span class="math inline">\(f_P(p) = f_{X,Y}(x,y)\cdot f_Z(z)\)</span>, <span class="math inline">\(f_S(s)\)</span> and <span class="math inline">\(f_\Theta(\theta)\)</span>. Note that I divided the animal location distribution into 2 parts, horizontal location <span class="math inline">\((x,y)\)</span> and depth, <span class="math inline">\(z\)</span>. So we can assess the probability of detecting a click as, <span class="math display">\[
+\begin{aligned}
+P_{cl} &amp;= Pr\{R(P, S, \Theta)&gt;T+N\} \\
+&amp;= {\int\int\int}_{R(p, s, \theta)&gt;T+N} f_{P}(p)~f_S(s)~f_\Theta(\theta)~ dp~ds~d\theta.
+\end{aligned}
+\]</span></p>
+<p>In addition we also assume there is a known distance beyond which animals will have negligible chance of being detected, say <span class="math inline">\(w\)</span>. In addition to the maximum area of detection, <span class="math inline">\(A = \pi w^2\)</span>, we can also reasonably assume that <span class="math inline">\(f_{X,Y}(x,y) = 1/A\)</span>, i.e., a uniform horizontal distribution. Unfortunately, the same cannot be said of <span class="math inline">\(f_Z(z)\)</span> because this depends on the diving and vocalizing behavior of the whale. Now, we can begin to estimate this probability for a data set of received clicks, <span class="math inline">\(r_1,\dots,r_n\)</span>.</p>
+<p>To begin the estimation process we will develop the likelihood function for a received click. First note that given the animal’s position, <span class="math inline">\(p\)</span>, <span class="math display">\[
+R(p,S,\Theta) + L(p) ~|~p = E(S,\Theta).
+\]</span> So, we can define the likelihood for a single received click, <span class="math inline">\(r\)</span> in terms of the effective source level by conditioning, i.e., <span class="math display">\[
+\begin{aligned}
+f_R(r) &amp;= \int f_{R|p}(r)f_P(p) dp \\
+&amp;= \int f_{E}(r+L(p))f_P(p) dp
+\end{aligned}
+\]</span> where <span class="math inline">\(f_E\)</span> is the density function of <span class="math inline">\(E(S,\Theta)\)</span>. Thus the likelihood for a single received click of level <span class="math inline">\(r\)</span> is, <span class="math display">\[
+\mathcal{L}(r) = \frac{\int f_E(r + L(p))~f_P(p)~dp}{\int \int_{u&gt;T+N+L(p)}f_E(u)~f_P(p)~du~dp} \]</span> The denominator is necessary to normalize the density function because a signal is received only if <span class="math inline">\(R &gt; T+N\)</span> or equivalently <span class="math inline">\(E &gt; T + N + L\)</span>. One very important side note is that the probability of detecting a single click is, <span class="math display">\[
+\begin{aligned}
+P_{cl} &amp;= \int \int_{u&gt;T+N+L(p)}f_E(u)~f_P(p)~du~dp \\
+&amp;= \int \left[1-F_E(T+N+L(p))\right]f_P(p)~dp \\
+&amp;= \mathbb{E}_P\left[ 1-F_E(T+N+L(p))\right].
+\end{aligned}
+\]</span> where <span class="math inline">\(F_E\)</span> is the cumulative distribution function of the effective sound level distribution. So, the likelihood for a set of received click levels can be written <span class="math display">\[
+\begin{aligned}
+\mathcal{L}(r_1,\dots,r_n) &amp;= \prod_{i=1}^n \frac{ \mathbb{E}_P \left[ f_E(r_i + L(p)\right]}{\mathbb{E}_P\left[ 1-F_E(T+N+L(p))\right]} \\
+&amp;\approx \prod_{i=1}^n \frac{ \sum_j \left[ f_E(r_i + L(p_{ij})\right]f_P(p_{ij})}{\sum_j\left[ 1-F_E(T+N+L(p_{ij}))\right]f_P(p_{ij})}
+\end{aligned}
+\]</span> where <span class="math inline">\(p_{ij}\)</span> is a grid of possible positions where <span class="math inline">\(L(p_{ij})\)</span> is evaluated via sound propagation modeling.</p>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/esl_plot.png" height="300" class="figure-img"></p>
+<figcaption>Comparison of the distribution of the nominal sound level for a random sperm whale click versus the distribution of the effective sound level which accounts for random orientation relative to the glider hydrophone</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/det_plot.png" height="300" class="figure-img"></p>
+<figcaption>A 2d view of the probability of detection</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p><em>(Yvonne and Janelle)</em></p>
