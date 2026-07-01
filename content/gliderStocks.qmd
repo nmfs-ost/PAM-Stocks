@@ -61,8 +61,6 @@ Following the successful completion of glider missions, raw audio files were con
 
 *(Kait)*
 
-#### Likelihood estimation
-
 #### Detection parameter estimation
 
 Detection of an acoustic signal occurs when $$
