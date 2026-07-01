@@ -128,9 +128,9 @@ where $p_{ij}$ is a grid of possible positions where $L(p_{ij})$ is evaluated vi
 :::
 
 
-#### DSM development
+#### Density surface models
 
-*(Yvonne and Janelle)*
+The ultimate goal of the SPACIOUS analytical framework is to translate raw acoustic detections into robust, quantitative assessments of population density and distribution. The density surface model (DSM) integrates the acoustically derived data, such as sperm whale click counts, detection probabilities, and propagation models, with environmental covariates. By adapting the statistical framework used for visual-based models to account for the unique spatial and temporal characteristics of slow-moving platforms (like gliders and drifters), this work allows researchers to predict cetacean density across a survey area. Currently, the team is building and refining these models to seamlessly incorporate uncrewed passive acoustic data, ensuring higher accuracy and seasonal context for future stock assessments.
 
 :::
 
