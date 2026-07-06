@@ -53,13 +53,28 @@ Following the successful completion of glider missions, raw audio files were con
 **Future detection work**: Effort is currently underway to completed automated detection of clicks on CalCurCEAS2024 data and use groundtruth data to generate an adjusted click count within each dive-portion. Following the completion of glider deployments from WHICEAS2026, recording data is being processed and initial analysis for sperm whale encounters is forthcoming.
 
 ::: {layout-ncol=1 layout-valign="center"}
-![CalCurCEAS sperm whale encounters (purple dots) mapped along glider tracks (gray) (white)](images/Pm_Enc_Map.png){height=300}
+![CalCurCEAS sperm whale encounters (purple dots) mapped along glider tracks (gray)](images/Pm_Enc_Map.png){height=300}
 :::
 
 
 #### Propagation modeling
 
-*(Kait)*
+A broadband acoustic detection modeling framework is being developed to quantify the influences of environmental conditions the probability of detecting sperm whale clicks recorded by autonomous gliders. The framework combines acoustic propagation modeling with recorded sperm whale click waveform to estimate broadband received levels and detection probability under realistic oceanographic conditions and typical peak-to-peak time domain measurements.
+
+Acoustic propagation is simulated using the Bellhop ray tracing model with dive-specific sound speed profiles derived from glider CTD observations, local bathymetry from GEBCO, and a suite requency-dependent seafloor properties representative of a variety of sediment types encountered during surveys. Simulations are performed across the full 360° surrounding each glider to capture spatial variability in propagation associated with changing bathymetry, glider depth, seafloor composition, and behavioural conditions of the animals.
+
+A primary challenge has been efficiently storing and processing broadband propagation results. To address this, Bellhop arrival times and amplitudes are preserved within hierarchical HDF5 databases. This approach dramatically reduces storage requirements while retaining the arrival structure needed to reconstruct broadband acoustic propagation. Furthermore, HDF5's are sharable and easily reproducible. By separating the computationally intensive ray tracing from later signal processing, the propagation result can be reused to evaluate different source signals and behavioral scenarios without rerunning Bellhop.
+
+Broadband received levels are estimated by converting stored arrival structures into impulse responses and transfer functions that are convolved with recorded sperm whale click waveforms. This approach preserves the effects of multipath propagation, phase interference, and frequency-dependent transmission that cannot be captured using narrowband transmission loss estimates alone, while providing an efficient framework for simulating broadband received levels throughout the modeled environment.
+
+Completed modeling work: A scalable processing framework has been developed to evaluate millions of source-receiver combinations spanning multiple glider dives, whale depth distributions, glider operating depths, and seafloor sediment types. Processing workflows fully utilize the PAM-SI virtual machine infrastructure by distributing Bellhop simulations across dozens of processor cores. The resulting propagation products have been integrated into a Monte Carlo framework that quantifies uncertainty in acoustic detectability arising from whale behavior, environmental variability, and sensor configuration. Model outputs include broadband received level fields, spatial detection probability surfaces, and effective detection radius estimates that provide the foundation for passive acoustic distance sampling analyses.
+
+Future modeling work: Following completion of automated click detection, modeled detection probabilities will be combined with observed click rates to estimate effective survey area and ultimately sperm whale density using passive acoustic distance sampling methods. Future efforts are focused on expanding propagation simulations to encompass all multiple species and continue devloping sharable scalable workflows for single-sensor UAV. 
+
+::: {layout-ncol=1 layout-valign="center"}
+![Three-dimensional area monitored by a glider at 800 m an static noise level of 80 dBpp re:1 uPa (micro). Gray region indicates local bathymetry. ](images/Kait_image.png){height=300}
+:::
+:::
 
 #### Detection parameter estimation
 
