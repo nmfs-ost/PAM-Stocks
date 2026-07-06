@@ -75,6 +75,7 @@ Future modeling work: Following completion of automated click detection, modeled
 ![Three-dimensional area monitored by a glider at 800 m an static noise level of 80 dBpp re:1 uPa (micro). Gray region indicates local bathymetry. ](images/Kait_image.png){height=300}
 :::
 
+
 #### Detection parameter estimation
 
 Detection of an acoustic signal occurs when $$
