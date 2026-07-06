@@ -394,7 +394,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="project-status"><strong>Project status</strong></h3>
 <p><em>Last updated: June 2026</em></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Glider operations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sperm whale detection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Propagation modeling</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Glider operations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sperm whale detection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Propagation modeling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Detection parameter estimation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Density surface models</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>SPACIOUS draws on two glider datasets collected as part of a Pacific-wide effort to operationalize PAM gliders for NMFS cetacean surveys. Both datasets are named for concurrent ship-based visual and acoustic surveys, enabling direct comparisons across data collection methods.</p>
@@ -459,10 +459,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</div>
-</div>
-<section id="detection-parameter-estimation" class="level4">
-<h4 class="anchored" data-anchor-id="detection-parameter-estimation">Detection parameter estimation</h4>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>Detection of an acoustic signal occurs when <span class="math display">\[
 R(p, s, \theta) - N &gt;T
 \]</span> where <span class="math inline">\(N\)</span> is the noise level, <span class="math inline">\(T\)</span> is a set threshold, and <span class="math inline">\(r(p, s, \theta)\)</span> is the received signal for an animal that emitted a click at position <span class="math inline">\(p=(x,y,z)\)</span> of nominal sound level <span class="math inline">\(s\)</span> and angle <span class="math inline">\(\theta\)</span> relative to the glider. The signal level can be decomposed as <span class="math display">\[
@@ -522,19 +519,19 @@ P_{cl} &amp;= \int \int_{u&gt;T+N+L(p)}f_E(u)~f_P(p)~du~dp \\
 </div>
 </div>
 </div>
-</section>
-<section id="density-surface-models" class="level4">
-<h4 class="anchored" data-anchor-id="density-surface-models">Density surface models</h4>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>The ultimate goal of the SPACIOUS analytical framework is to translate raw acoustic detections into robust, quantitative assessments of population density and distribution. The density surface model (DSM) integrates the acoustically derived data, such as sperm whale click counts, detection probabilities, and propagation models, with environmental covariates.</p>
 <p>By adapting a similar analytical framework used for visual-based models, we will account for the unique spatial and temporal characteristics of slow-moving platforms (like gliders and drifters) to allow for cetacean density predictions across a given survey area. Currently, the team is building and refining these models to seamlessly incorporate uncrewed passive acoustic data from Seagliders and DASBRs for future stock assessments.</p>
-<p>:::</p>
+</div>
+</div>
+</div>
 <!-- ### **Action items** -->
 <!-- 1.  **Evaluate resources required:** Evaluate required funding depending on other proposals and staffing. -->
 <!-- 2.  **Confer with PAM SI Working Group:** Working Group determines whether there is substantial interest and priority for continued pursuit of this project. If no-go, determine whether the project may be re-evaluated later based on funds available. -->
 <!-- 3.  **Evaluate state of the science:** Connect with Center for Research into Ecological and Environmental Modelling, Duke, and other colleagues to assess the state of the science. -->
 <!-- 4.  **Identify datasets and species:** Collect and collate PIFSC, SEFSC, and SWFSC PAM glider data and identify priority species for modeling based on data availability and management needs. -->
 <!-- 5.  **Assess analytical next steps:** Establish a working group to assess suitable modeling frameworks that fit PAM glider data. Additionally, the PAM SI could convene a workshop or series of workshops that assess the state of the science for incorporating PAM data into species distribution model frameworks in support of this project. -->
-</section>
 </section>
 <section id="team-links" class="level3">
 <h3 class="anchored" data-anchor-id="team-links">Team links</h3>
